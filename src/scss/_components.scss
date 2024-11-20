@@ -1,11 +1,8 @@
 .logo {
-
   &__container {
     display: flex;
     gap: 1rem;
   }
-
-  &__description {}
 
   &__title {
     font-weight: 700;
@@ -17,23 +14,20 @@
   }
 }
 
-.icon {}
-
-.icon-logo {}
-
 .menu {
+  &__item {
 
-  &__container {}
-
-  &__list {}
-
-  &__item {}
+    &:last-child>a {
+      line-height: 0;
+    }
+  }
 
   &__link {
     display: inline-block;
     padding: .5rem;
     text-wrap: nowrap;
     transition: .3s color;
+
 
     &_active {
       color: $color--main;
@@ -43,12 +37,17 @@
       color: $color--main;
     }
   }
+
+  &__icon {
+    transition: .3s fill;
+
+    &:hover {
+      fill: $color--main;
+    }
+  }
 }
 
-.icon-basket {}
-
 .contact-info {
-
   &__container {
     display: flex;
     gap: 3.4rem;
@@ -60,14 +59,10 @@
     text-wrap: nowrap;
     font-weight: 700;
   }
-
-  &__call-button {}
 }
 
 .call-button {
   text-align: center;
-
-
 
   &__title {
     display: inline-block;
@@ -109,7 +104,6 @@
 }
 
 .dropdown {
-
   &__container {
     position: absolute;
     top: 0;
@@ -119,12 +113,6 @@
       display: none;
     }
   }
-
-  &__list {}
-
-  &__item {}
-
-  &__link {}
 }
 
 .catalog-button {
@@ -166,7 +154,6 @@
 }
 
 .slider {
-
   &__button {
     position: absolute;
     top: 0;
@@ -204,19 +191,17 @@
 
   &__content {
     position: relative;
+
   }
 
   &__cards {
     display: flex;
-    justify-content: space-between;
-    gap: 3rem;
+    flex-wrap: wrap;
+    gap: 2.7rem 3rem;
   }
-
-  &__card {}
 }
 
 .card {
-
   &__container {
     display: flex;
     flex-direction: column;
@@ -288,8 +273,6 @@
   &__icon-arrow {
     stroke: $color--secondary;
   }
-
-  &__line {}
 }
 
 .line {
@@ -311,4 +294,11 @@
     height: 1.3rem;
     background-color: $color--text-secondary;
   }
+}
+
+.title {
+  font-size: $text-size--h2;
+  font-weight: 900;
+  line-height: 3.048rem;
+  text-wrap: nowrap;
 }

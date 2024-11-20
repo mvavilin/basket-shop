@@ -1,0 +1,314 @@
+.logo {
+
+  &__container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__description {}
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    text-wrap: nowrap;
+  }
+}
+
+.icon {}
+
+.icon-logo {}
+
+.menu {
+
+  &__container {}
+
+  &__list {}
+
+  &__item {}
+
+  &__link {
+    display: inline-block;
+    padding: .5rem;
+    text-wrap: nowrap;
+    transition: .3s color;
+
+    &_active {
+      color: $color--main;
+    }
+
+    &:hover {
+      color: $color--main;
+    }
+  }
+}
+
+.icon-basket {}
+
+.contact-info {
+
+  &__container {
+    display: flex;
+    gap: 3.4rem;
+    align-items: center;
+  }
+
+  &__phone {
+    font-size: $text-size--l;
+    text-wrap: nowrap;
+    font-weight: 700;
+  }
+
+  &__call-button {}
+}
+
+.call-button {
+  text-align: center;
+
+
+
+  &__title {
+    display: inline-block;
+    padding: .5rem 1.1rem;
+    border: .1rem solid $color--secondary;
+    font-size: $text-size--xs;
+    font-weight: 700;
+    color: $color--secondary;
+    transition: .3s all;
+    text-wrap: nowrap;
+
+    &:hover {
+      color: $color--white;
+      background-color: $color--secondary;
+    }
+  }
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+
+  &__container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  &__sum {
+    text-wrap: nowrap;
+    font-weight: 700;
+  }
+
+  &__dropdown {
+    display: flex;
+    gap: 1.1rem;
+    align-items: baseline;
+  }
+}
+
+.dropdown {
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &_inactive {
+      display: none;
+    }
+  }
+
+  &__list {}
+
+  &__item {}
+
+  &__link {}
+}
+
+.catalog-button {
+  text-align: left;
+
+  &__title {
+    display: inline-block;
+    padding: 2rem 4.2rem;
+    box-shadow: 0 .7rem 3.5rem 0 rgba(235, 45, 102, 0.36);
+    font-size: $text-size--l;
+    font-weight: 700;
+    line-height: 2.286rem;
+    color: $color--white;
+    background-color: $color--secondary;
+    transition: .3s background-color;
+    text-wrap: nowrap;
+
+    &:hover {
+      background-color: rgba(235, 45, 102, 0.64);
+    }
+  }
+}
+
+.switches {
+  position: relative;
+  right: 1.4rem;
+  display: flex;
+  gap: 1.8rem;
+
+  &__rectangle {
+    width: 3.9rem;
+    height: .8rem;
+    background-color: rgba(255, 255, 255, .35);
+
+    &_active {
+      background-color: #fbfbfb;
+    }
+  }
+}
+
+.slider {
+
+  &__button {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+    cursor: pointer;
+
+    &_prev {
+      left: -9.8rem;
+      padding-right: .5rem;
+      padding-left: 5rem;
+    }
+
+    &_next {
+      right: -9.8rem;
+      padding-right: 5rem;
+      padding-left: .5rem;
+    }
+
+    &:hover {}
+  }
+
+  &__icon {
+    fill: $color--text-secondary;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.8rem;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  &__card {}
+}
+
+.card {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 27rem;
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 .5rem 1.5rem 0 rgba(0, 0, 0, 0.09);
+    gap: 4rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+  }
+
+  &__title {
+    font-size: $text-size--l;
+    font-weight: 900;
+    line-height: 1.95rem;
+    text-wrap: nowrap;
+    text-align: center;
+  }
+
+  &__image {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 19rem;
+    max-height: 20.3rem;
+  }
+
+  &__source {
+    flex: 1 1;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: .5rem;
+    padding-left: 1.5rem;
+    text-align: center;
+    gap: .3rem;
+  }
+
+  &__discount-price {
+    font-size: $text-size--m;
+    text-decoration: line-through;
+
+  }
+
+  &__cost {
+    display: flex;
+    justify-content: space-between;
+    font-size: $text-size--xxl;
+    font-weight: 700;
+    line-height: 2.194rem;
+    color: $color--main;
+    text-align: center;
+  }
+
+  &__icon-arrow {
+    stroke: $color--secondary;
+  }
+
+  &__line {}
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  max-width: 47rem;
+
+  height: .6rem;
+  margin-bottom: .3rem;
+  background-color: #e2e4f2;
+
+
+  &__scroll {
+    position: absolute;
+    top: -50%;
+    left: calc(40% - 4.7rem);
+    width: 100%;
+    max-width: 4.7rem;
+    height: 1.3rem;
+    background-color: $color--text-secondary;
+  }
+}

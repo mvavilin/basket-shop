@@ -1,3 +1,5 @@
+// Slider
+
 const products = [
   {
     title: "Баскетбольный мяч",
@@ -262,3 +264,27 @@ prevButton.addEventListener("click", () => {
 });
 
 updateSlider();
+
+// Pop-up
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownCart = document.querySelector(".header__cart");
+  const dropdownIcon = document.querySelector(".dropdown__icon-dropdown");
+  const dropdownContainer = document.querySelector(".dropdown__container");
+
+  dropdownCart.addEventListener("click", function (event) {
+    event.stopPropagation();
+    dropdownContainer.classList.toggle("dropdown__container_active");
+    dropdownIcon.classList.toggle("dropdown__icon-dropdown_active");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      !dropdownContainer.contains(event.target) &&
+      !dropdownCart.contains(event.target)
+    ) {
+      dropdownContainer.classList.remove("dropdown__container_active");
+      dropdownIcon.classList.remove("dropdown__icon-dropdown_active");
+    }
+  });
+});

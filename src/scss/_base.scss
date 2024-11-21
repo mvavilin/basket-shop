@@ -1,0 +1,68 @@
+@import 'normalize.min';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$display-width--desktop: 160rem;
+$display-width--tablet: 76.8rem;
+$display-width--mobile: 32rem;
+
+$font--main: Montserrat, Arial, sans-serif;
+
+$text-size--xs: 1.1rem;
+$text-size--basic: 1.2rem;
+$text-size--s: 1.3rem;
+$text-size--m: 1.4rem;
+$text-size--paragraph: 1.5rem;
+$text-size--l: 1.6rem;
+$text-size--xl: 1.7rem;
+$text-size--xxl: 1.8rem;
+$text-size--h2-mobile: 1.8rem;
+$text-size--h3: 2rem;
+$text-size--h2: 2.5rem;
+$text-size--xxxl: 3.6rem;
+
+$color--main: #3145ff;
+$color--secondary: #eb2d66;
+$color--secondary-shadow: rgba(235, 45, 102, 0.36);
+$color--secondary-background: rgba(235, 45, 102, 0.64);
+$color--black: #000000;
+$color--white: #ffffff;
+$color--text-main: #2a2d46;
+$color--text-secondary: #9094b8;
+$color--text-light: $color--white;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font--main;
+  font-size: $text-size--basic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}

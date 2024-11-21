@@ -1,0 +1,351 @@
+.container {
+  max-width: 147rem;
+  margin: 0 auto;
+  padding-right: 15rem;
+  padding-left: 15rem;
+}
+
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
+  }
+
+  &__icon-logo {
+    fill: $color--main;
+  }
+
+  &__logo-title {
+    color: $color--main;
+  }
+
+  &__menu-item {
+
+    &:last-child>a {
+      line-height: 0;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  &__icon-basket {
+    fill: $color--secondary;
+  }
+}
+
+.main {
+  &__section {
+    margin-bottom: 9.6rem;
+  }
+}
+
+.start {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 6.6rem;
+    padding-bottom: 2.1rem;
+    gap: 17rem 0rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 54.4rem;
+  }
+
+  &__title {
+    font-size: $text-size--xxxl;
+    font-weight: 900;
+    line-height: 4.388rem;
+  }
+
+  &__text {
+    max-width: 38rem;
+    font-size: $text-size--xxl;
+    line-height: 2.572rem;
+  }
+
+  &__visual {
+    position: relative;
+    top: -4.5rem;
+    left: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 61.5rem;
+    height: 36.9rem;
+    padding: 6rem 2.7rem 2.9rem;
+    overflow: visible;
+    background-image: linear-gradient(rgba(49, 69, 255, 0.6), rgba(49, 69, 255, 0.6)), url('./assets/images/main-background.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 20.5rem;
+
+    &::before {
+      position: absolute;
+      top: 10.5rem;
+      right: 24.8rem;
+      z-index: 1;
+      width: 55.4rem;
+      height: 33.25rem;
+      background-image: url('./assets/images/sneakers.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  &__visual-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 23.5rem;
+    color: $color--white;
+    gap: .3rem;
+
+    &::before {
+      position: absolute;
+      top: -1.5rem;
+      left: -1.5rem;
+      z-index: 1;
+      width: 1.3rem;
+      height: 1.3rem;
+      background-color: white;
+      content: '';
+    }
+  }
+
+  &__visual-title {
+    font-size: $text-size--xl;
+    font-weight: 700;
+
+  }
+
+  &__visual-price {
+    font-weight: 700;
+
+  }
+}
+
+.hot {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8.2rem;
+  }
+
+  &__content {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8.9rem;
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: 5.35rem
+  }
+
+  &__menu-link {
+    font-size: $text-size--paragraph;
+  }
+
+  &__slider-content {
+    position: relative;
+    max-width: 100%;
+  }
+
+
+  &__slider-cards {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 117rem;
+    min-width: 100%;
+  }
+
+  &__slider-card {
+    opacity: 0;
+    transition: opacity .5s ease;
+  }
+
+
+  &__slider-line-scroll {
+    transition: left .5s ease;
+  }
+}
+
+.visible {
+  opacity: 1;
+}
+
+.news-feed {
+  &__container {
+    display: flex;
+    gap: 3rem;
+    overflow: hidden;
+  }
+
+  &__article {
+    flex: 1 0 57rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__article-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    padding: 29rem 7.2rem 4.7rem;
+    box-shadow: 0 .5rem 1.5rem 0 rgba(0, 0, 0, 0.09);
+    color: $color--white;
+    gap: 1.4rem;
+
+  }
+
+  &__article-title {
+    position: relative;
+
+    width: 75%;
+    font-size: $text-size--h3;
+    font-weight: 900;
+    line-height: 2.438rem;
+
+
+    &::before {
+      position: absolute;
+      top: -1.9rem;
+      left: -3.3rem;
+      width: 1.9rem;
+      height: 1.9rem;
+      background-color: $color--white;
+      content: '';
+    }
+  }
+
+  &__article-subtitle {
+    font-size: $text-size--paragraph;
+    font-weight: 400;
+    line-height: 1.829rem;
+  }
+
+  &__plus {
+    position: absolute;
+    top: .5rem;
+    right: 2rem;
+    font-size: $text-size--xxxl;
+    font-weight: 900;
+    line-height: 4.388rem;
+  }
+
+  #article__0001 {
+    background-image: linear-gradient(rgba(17, 13, 251, 0.69), rgba(116, 114, 243, 0.81)), url('./assets/images/article-air-jordan-sneakers-background.jfif');
+  }
+
+  #article__0002 {
+    background-image: linear-gradient(rgba(140, 0, 251, 0.76), rgba(214, 30, 244, 0.31)), url('./assets/images/article-adidas-ball-background.jfif');
+  }
+}
+
+.catalog {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.1rem;
+  }
+
+  &__slider-cards {
+    justify-content: space-between;
+  }
+}
+
+.about {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4rem 2.4rem;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__item-numbers {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 6.095rem;
+  }
+
+  &__item-title {
+    font-size: $text-size--m;
+    font-weight: 400;
+    line-height: 1.707rem;
+  }
+}
+
+.footer {
+  background-color: #343a62;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px;
+    padding-top: 12.4rem;
+    padding-bottom: 12.4rem;
+    color: $color--white;
+  }
+
+  &__menu-item {
+
+    &:last-child>a {
+      line-height: 0;
+    }
+  }
+
+  &__menu-list {
+
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__icon-up,
+  &__icon-logo,
+  &__icon-ellipsis {
+    fill: $color--white;
+  }
+
+  &__contact-info-phone {
+    font-size: $text-size--s;
+    line-height: 1.585rem;
+  }
+
+  &__contact-info-container {
+    gap: 10rem;
+  }
+}

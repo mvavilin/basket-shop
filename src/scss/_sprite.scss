@@ -1,0 +1,53 @@
+.icon {
+  display: inline-block;
+  background-image: url(sprite.svg);
+  background-repeat: no-repeat;
+}
+
+.icon-basket {
+  width: 25px;
+  height: 23px;
+  background-position: 0 0;
+}
+
+.icon-logo {
+  width: 29px;
+  height: 29px;
+  background-position: -48px 0;
+}
+
+.icon-dropdown {
+  width: 11px;
+  height: 6px;
+  background-position: -96px 0;
+}
+
+.icon-prev {
+  width: 23px;
+  height: 46px;
+  background-position: -192px 0;
+}
+
+.icon-next {
+  width: 23px;
+  height: 46px;
+  background-position: -240px 0;
+}
+
+.icon-up {
+  width: 20px;
+  height: 25px;
+  background-position: -288px 0;
+}
+
+.icon-arrow {
+  width: 32px;
+  height: 22px;
+  background-position: -336px 0;
+}
+
+.icon-ellipsis {
+  width: 19px;
+  height: 3px;
+  background-position: -432px 0;
+}
